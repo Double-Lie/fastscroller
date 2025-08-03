@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+		
+		
+		<!-- 头部信息 -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="?attr/colorPrimarySurface"
+			android:padding="16dp">
+			
+			
+		
+			<TextView
+				android:id="@+id/tvTimestamp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:textSize="14sp"/>
+				
+			<TextView
+				android:id="@+id/tvStats"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:textSize="14sp"/>
+		</LinearLayout>
+		
+		
+		
+		<!-- 表头 -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="?attr/colorSurfaceVariant"
+			android:padding="8dp">
+			
+			<TextView
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:text="排名"
+				android:textStyle="bold"
+				android:gravity="center"/>
+				
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="楼栋"
+				android:textStyle="bold"
+				android:gravity="center"/>
+				
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="楼层"
+				android:textStyle="bold"
+				android:gravity="center"/>
+				
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="房间"
+				android:textStyle="bold"
+				android:gravity="center"/>
+				
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.2"
+				android:text="电费(度)"
+				android:textStyle="bold"
+				android:gravity="center"/>
+		</LinearLayout>
+	
+	
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+                
+            <com.example.swmu_electricity_ranking.FastScroller
+                android:id="@+id/fastScroller"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+	
+	</LinearLayout>
+	
+		
+</FrameLayout>
