@@ -2,9 +2,12 @@
 multiusable fastscroller for Android
 
 # How to use
-1.Paste fastcroller.kt to your app/main/java/...
+1.Paste fastcroller.kt to your app/src/main/java/...
+
 **2.Check whether the colors are well set or not.**
+
 3.Add these code to the area where you want to use fastcroller in \layout\....xml.
+
 (If you are not aware of where to put these codes，you can check Example files here or try some times.
 
 ```
