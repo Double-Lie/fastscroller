@@ -8,7 +8,7 @@ multiusable fastscroller for Android
 
 3.Add these code to the area where you want to use fastcroller in \layout\\....xml.
 
-(If you are not aware of where to put these codes，you can check Example files here or try some times.
+(If you are not aware of where to put these codes，you can **check Example files here or try some times**.
 
 ```
 <RelativeLayout
