@@ -1,5 +1,6 @@
 # fastscroller
 multiusable fastscroller for Android
+if there are any problems, you can contact me via **larrydoubleliework@qq.com**
 
 # How to use
 1.Paste **fastcroller.kt** to your app/src/main/java/...
