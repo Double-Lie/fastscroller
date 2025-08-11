@@ -249,6 +249,9 @@ class FastScroller @JvmOverloads constructor(
                 }
             }
 
+            // +++ 新增：确保滑块高度不超过可见区域 +++
+            currentThumbHeight = currentThumbHeight.coerceAtMost(visibleHeight.toFloat())
+
             // 计算滑块位置（考虑边界情况）
             val firstVisible = layoutManager.findFirstVisibleItemPosition()
             val lastVisible = layoutManager.findLastVisibleItemPosition()
